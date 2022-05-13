@@ -111,8 +111,25 @@ nav p {
   text-align: center;
   text-decoration: none;
 }
-section article {
+
+.join {
+  width: auto;
+  height: 150px;
+  background-color: #d0ac07;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  flex-basis: 570px;
 }
+
+.joinText {
+  color: #FFFFFF;
+  font-size: 32px;
+  text-align: left;
+}
+
 
 footer {
   background-color: #111;
