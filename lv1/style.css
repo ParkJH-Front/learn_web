@@ -68,6 +68,7 @@ nav p {
   margin: 0px 10px 0px 10px;
 
   flex-basis: 570px;
+  flex-shrink: 0;
 }
 
 .mainImgBox {
@@ -78,7 +79,7 @@ nav p {
   height: 300px;
   background-image: url(image/img-2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .mainHeaderLine {
@@ -112,24 +113,44 @@ nav p {
   text-decoration: none;
 }
 
-.join {
+#join {
   width: auto;
-  height: 150px;
+  height: auto;
+  padding: 0px 100px 0px 100px;
   background-color: #d0ac07;
 
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
-  flex-basis: 570px;
 }
 
-.joinText {
-  color: #FFFFFF;
+#join article {
+  margin: 0px 10px 0px 10px;
+
+  flex-basis: 570px;
+  flex-shrink: 0;
+}
+
+#join h1 {
   font-size: 32px;
+  font-weight: normal;
+  color: #FFFFFF;
   text-align: left;
 }
 
+#join a {
+  width: 30%;
+  padding: 20px 0px;
+  margin-left: 100px;
+
+  background-color: #111;
+  color: #ffffff;
+  float: left;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
 
 footer {
   background-color: #111;
