@@ -1,0 +1,10 @@
+header {
+  background-color: black;
+}
+
+header .headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
