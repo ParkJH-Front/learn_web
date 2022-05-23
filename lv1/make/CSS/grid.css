@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box !important;
+  transition: ease all 0.5s;
+}
+
 body {
   margin: 0px;
 }
