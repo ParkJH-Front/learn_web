@@ -1,0 +1,45 @@
+header {
+  height: auto;
+
+  background-color: #1c1c1c;
+}
+
+header .col_1, .col_3{
+  flex-grow: 1;
+}
+
+header .content_left, .content_right{
+  font-size: 18px;
+  color: #b7990f;
+  padding: 40px 0px;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+header .icon {
+  padding: 0 10px;
+}
+
+/* 해더라인 끝 */
+/* 네비라인 시작 */
+
+nav {
+  background-color: #f8f9fa!important;
+
+  height: auto;
+}
+
+nav #container {
+  width: 100%;
+  padding: 20px 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(0,0,0,.5);
+  
+  font-size: 18px;
+  font-weight: 400
+}
