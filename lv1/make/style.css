@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #1c1c1c;
+}
+
+header #container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 1140px;
+  /* max-width: 960px; */
+}
+
+header #row {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header .col_1, .col_2, .col_3 {
+  text-align: center;
+}
+
+header .col_1, .col_3 {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+header .content_Main {
+  width: 100%;
+}
+
+.content_Main div {
+  float: left;
+  width: 50%;
+
+  padding: 40px 0px;
+}
+
+header .content_Box {
+  font-size: 18px;
+  color: #b7990f;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+header .icon {
+  padding: 0 10px;
+}
+
+/* 해더라인 끝 */
+/* 네비라인 시작 */
+
+nav {
+  background-color: #f8f9fa!important;
+
+  height: auto;
+}
+
+nav #container {
+  width: 100%;
+  padding: 20px 16px;
+}
+
+nav .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.row div {
+  margin: 0px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(0,0,0,.5);
+  
+  font-size: 18px;
+  font-weight: 400
+}
+
+/* 네비완성 */
+/* 푸터시작 */
+/* 푸터완성 */
