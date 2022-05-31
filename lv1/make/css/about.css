@@ -34,3 +34,18 @@ section .about_img {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+section .about_link {
+  width: 30%;
+  float: left;
+  font-size: 16px;
+  color: #1c1c1c;
+  background-color: #c2a20e;
+  text-align: center;
+  padding: 14px 0px;
+}
+
+section a {
+  text-decoration: none;
+  outline: none;
+}

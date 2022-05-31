@@ -1,15 +1,12 @@
 * {
-<<<<<<< HEAD
   box-sizing: border-box !important;
   transition: ease all 0.5s;
 }
 
 body {
   margin: 0px;
-=======
-box-sizing: border-box !important;
-transition: ease all 0.5s;
->>>>>>> 37b21d33cd9b37673a46bd6d7614a786de45c40e
+  box-sizing: border-box !important;
+  transition: ease all 0.5s;
 }
 
 body {
@@ -43,9 +40,6 @@ body {
   .container {
     max-width: 540px;
 }
-}
-
-.grid_layout {
 }
 
 .container { 
