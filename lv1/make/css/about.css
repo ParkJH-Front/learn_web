@@ -21,7 +21,7 @@ section .about_text_head {
   margin: 20px 0px 20px 0px;
 }
 
-section h1 {
+.about_section h1 {
   margin: 0;
   color: #1c1c1c;
   font-size: 46px;
@@ -35,7 +35,7 @@ section .about_img {
   background-repeat: no-repeat;
 }
 
-section .about_link {
+section .about_more_link {
   width: 30%;
   float: left;
   font-size: 16px;
@@ -43,9 +43,4 @@ section .about_link {
   background-color: #c2a20e;
   text-align: center;
   padding: 14px 0px;
-}
-
-section a {
-  text-decoration: none;
-  outline: none;
 }

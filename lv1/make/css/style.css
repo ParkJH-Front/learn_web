@@ -8,7 +8,13 @@ header .col_1, .col_3{
   flex-grow: 1;
 }
 
-header .content_left, .content_right{
+header .content_left {
+  font-size: 18px;
+  color: #b7990f;
+  padding: 40px 0px;
+}
+
+header .content_right {
   font-size: 18px;
   color: #b7990f;
   padding: 40px 0px;

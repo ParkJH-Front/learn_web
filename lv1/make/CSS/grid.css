@@ -73,3 +73,28 @@ body {
 .about_section {
   padding: 90px 0px;  
 }
+
+section .more_link {
+  width: 30%;
+  float: left;
+  font-size: 16px;
+  color: #1c1c1c;
+  background-color: #c2a20e;
+  text-align: center;
+  padding: 14px 0px;
+}
+
+section a {
+  color: #1c1c1c;
+  text-decoration: none;
+  outline: none;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.section_layout {
+  padding: 90px 0px;
+}
