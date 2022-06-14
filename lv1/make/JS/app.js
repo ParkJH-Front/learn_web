@@ -1,12 +1,16 @@
-const navBtn = document.getElementsByClassName("navBtn")
+const navBtn = document.querySelectorAll(".navBtn")
 
 console.log(navBtn)
 
-
-function navBtnColor() {
-  console.log("wow!")
+function navBtnHandler(list) {
+  console.log("hi")
+  console.log(list.dir)
 }
 
 navBtn.forEach((element) => {
-  console.log(element);
+  element.addEventListener("mouseover", navBtnHandler)
 })
+
+
+
+
