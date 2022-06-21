@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  /* grid 트랙의 형태, 크기를 지정 */
+  grid-template-row: 200px 200px 300px; /* 행(row) 배치의 조건 지정 */
+  grid-template-columns: 200px 200px 300px; /* 열(columns) 배치의 조건 지정 */
+  grid-template-columns: 1fr 1fr 1fr ; /* fr 앞의 숫자 비율대로 영역을 나눔. */
+  grid-template-columns: ;
+}
+
