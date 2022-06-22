@@ -1,0 +1,26 @@
+nav {
+  padding: 20px 0px;
+  width: 100%;
+  background-color: #6998ab;
+}
+
+.logo{
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.nav_menu {
+  padding: 10px 15px;
+}
+
+.nav_btn {
+  font-size: 14px;
+  color: #ffffff;
+}
