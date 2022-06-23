@@ -10,17 +10,27 @@ nav {
   font-weight: 700;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
+.main_menu > li {
+  float: left;
 }
 
-.nav_menu {
-  padding: 10px 15px;
+.main_menu > li > a {
+  display: block;
+  text-align: center;
 }
 
-.nav_btn {
-  font-size: 14px;
-  color: #ffffff;
+.main_menu, .Dropdown {
+  list-style-type: none; /* ul,li 요서 속성 초기화 */
+}
+
+.Dropdown {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main_menu > li:hover .Dropdown {
+  opacity: 1;
+  visibility: visible;
+
+  transition: ease-in-out;
 }

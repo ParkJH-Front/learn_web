@@ -3,3 +3,7 @@
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: 1fr 2fr 3fr;
 }
+
+.item {
+  
+}
