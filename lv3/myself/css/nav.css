@@ -1,13 +1,25 @@
 nav {
   padding: 20px 0px;
   width: 100%;
-  background-color: #6998ab;
+  top: 0;
+  z-index: 9;
+  position: absolute;
 }
 
-.logo{
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.logo {
   font-size: 24px;
   color: #ffffff;
   font-weight: 700;
+}
+
+.main_menu, .dropdown {
+  padding: 0px;
+  list-style-type: none;
 }
 
 .main_menu > li {
@@ -15,22 +27,27 @@ nav {
 }
 
 .main_menu > li > a {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.drop > a {
   display: block;
-  text-align: center;
 }
 
-.main_menu, .Dropdown {
-  list-style-type: none; /* ul,li 요서 속성 초기화 */
+.dropdown > li > a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #1A374D;;
 }
 
-.Dropdown {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.main_menu > li:hover .Dropdown {
-  opacity: 1;
-  visibility: visible;
-
-  transition: ease-in-out;
+.dropdown {
+  top: 100%;
+  padding: 20px 0;
+  border-radius: 20px;
+  background: #ffffff;
+  z-index: 999;
+  box-shadow: 0 2px 10px -2px rgb(0 0 0 / 10%);
+  transition: 0.2s 0s;
 }

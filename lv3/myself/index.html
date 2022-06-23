@@ -16,41 +16,23 @@
     <div class="container">
       <div class="center_box">
         <div class="left_box">
-          <a href="#" class="logo">
-            Tour .
-          </a>
+          <a href="#" class="logo">Tour .</a>
         </div>
         <div class="right_box">
           <ul class="main_menu">
+            <li><a href="#">Home</a></li>
             <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Dropdown</a>
-              <ul class="Dropdown">
-                <li>
-                  <a href="#">Elements</a>
-                </li>
-                <li>
-                  <a href="#">Meun One</a>
-                </li>
-                <li>
-                  <a href="#">Meun Two</a>
-                </li>
-                <li>
-                  <a href="#">Meun Three</a>
-                </li>
+              <a class="drop" href="#">Dropdown ▼</a>
+              <ul class="dropdown hidden">
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Meun One</a></li>
+                <li><a href="#">Meun Two</a></li>
+                <li><a href="#">Meun Three</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Cobtact Us</a>
-            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cobtact Us</a></li>
           </ul>
         </div>
       </div>
@@ -59,7 +41,23 @@
   <!-- 네비박스 끝 -->
   <!-- 히어로 박스 시작 -->
   <section class="hero rayout">
-    <div class="container"></div>
+    <div class="container">
+      <div class="row">
+        <div class="hero_left_box">
+          <div class="hero_main"></div>
+          <div class="hero_form"></div>
+        </div>
+        <div class="hero_right_box">
+          <div class="slides hero_hidden">
+            <img src="images/hero-slider-1.jpg" alt="hero_img">
+            <img src="images/hero-slider-2.jpg" alt="hero_img">
+            <img src="images/hero-slider-3.jpg" alt="hero_img">
+            <img src="images/hero-slider-4.jpg" alt="hero_img">
+            <img src="images/hero-slider-5.jpg" alt="hero_img">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- 히어로 박스 끝 -->
   <!-- 컨텐츠 박스 시작-->
@@ -89,4 +87,5 @@
   </footer>
   <!-- 푸터 박스 끝-->
 </body>
+<script src="js/dropdown.js"></script>
 </html>
