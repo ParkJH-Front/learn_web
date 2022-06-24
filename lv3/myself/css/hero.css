@@ -3,3 +3,7 @@
   background: #6998AB;
   margin-bottom: 100px;
 }
+
+.hero > div > .row {
+  display: flex;
+}
