@@ -99,8 +99,7 @@ img {
   z-index: 1;
 }
 
-.text_active {
-  color: red;
+.cursor {
   animation-name: cursor; 
   animation-duration: 0.3s; 
   animation-iteration-count: infinite; 
