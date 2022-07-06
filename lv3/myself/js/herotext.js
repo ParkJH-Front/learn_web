@@ -6,52 +6,27 @@ const worldList = [
 "San Francisco."
 ]
 const target = document.querySelector(".world_name")
+let num = worldList.length
+
+function typing(selectName) {
+  for(let i = selectName.length; 0 < i;) {
+    console.log(selectName)
+    target.innerText += selectName.shift()
+   }
+}
 
 
-// Array 지정할 숫자를 하나씩 늘림.
-function nextNum(number) {
-  if(number < 4) {
-    number = number +1
-    return number
+function nameSelect() {
+  if (num < 5) {
+    const selectName = worldList[num].split("") 
+    typing(selectName)
+
+    num = num + 1
+    
   } else {
-    number = 0
-    return number
+    num = 0
+    nameSelect()
   }
 }
 
-// 글자를 하나씩 타이핑함.
-function typing(nameArr) {
-  target.classList.add("cursor")
-  if(0<nameArr.length) {
-    target.textContent += nameArr.shift()
-  }
-}
-
-// 글자를 하나씩 지움.
-function remove() {
-  const reName = target.innerText
-  const reNameArr = reName.split("")
-  if(0<reNameArr.length) {
-    reNameArr.pop()
-    target.textContent = reNameArr.join("")
-  } else {
-    check()
-  }
-}
-
-//타이핑 실행 조건
-function check(worldName) {
-  if(0<worldName.length) {
-    typing(worldName)
-  } else {
-    remove(worldName)
-  }
-}
-
-let number = 0
-
-setInterval(function() {
-  const worldName = worldList[number]
-  const selectName = worldName.split("")
-  check(selectName)
-}, 200)
+nameSelect()
