@@ -5,7 +5,7 @@ const worldList = [
   "London.",
   "San Francisco."
   ]
-  const target = document.querySelector(".world_name")
+  const target = document.getElementById(".world_name")
   let num = worldList.length
   
   // 기존의 Array를 새로운 Array로 변경 (array.map 사용을 위한 함수)
@@ -24,7 +24,7 @@ const worldList = [
         remove(rowArray)
         console.log(rowArray)
       }
-    }, 200)
+    }, 100)
   }
   
   // 전달받은 Array를 한글자씩 지움
@@ -37,17 +37,12 @@ const worldList = [
       } else {
         clearInterval(removing)
         nameSelect()
-        // setTimeout(function cc(){
-        //   clearInterval(removing)
-        //   nameSelect()
-        // }, 200)
       }
-    }, 200)
+    }, 100)
   }
   
   //worldList 순차적으로 선택하여 다룸
   function nameSelect() {
-    target.classList.add("cursor")
     if (num < 5) {
       const selectName = worldList[num].split("") 
       wriht(selectName)
