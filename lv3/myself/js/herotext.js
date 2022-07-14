@@ -6,6 +6,7 @@ const worldList = [
   "San Francisco."
 ]
 const target = document.querySelector(".world_name")
+const worldImg = document.querySelectorAll(".world_img")
 let num = 0
 
 // 기존의 Array를 새로운 Array로 변경 (array.map 사용을 위한 함수)
@@ -14,13 +15,23 @@ function createArr(oldArr) {
 }
 
 // writh() 실행 시 관련 이미지가 표시됨.
-function heroImg() {
+function startImg(selectImg) {
+  let fadeinImg = selectImg[num]
+  fadeinImg.classList.remove("img_close")
+  fadeinImg.classList.remove("hidden")
+  fadeinImg.classList.add("img_active")
+}
 
+function endImg(selectImg) {
+  let fadeoutImg = selectImg[num]
+  fadeoutImg.classList.remove("img_active")
+  fadeoutImg.classList.add("img_close")
+  setTimeout(fadeoutImg.classList.add("hidden"), 2000)
 }
 
 // 전달받은 Array를 한글자씩 출력함.
 function writh(selectName) {
-  heroImg()
+  startImg(worldImg)
   const rowArray = selectName.map(createArr)
   const typing = setInterval(function aa() {
     if (0 < selectName.length) {
@@ -36,6 +47,7 @@ function writh(selectName) {
 
 // 전달받은 Array를 한글자씩 지움
 function remove(selectName) {
+  endImg(worldImg)
   const removing = setInterval(function bb() {
     if (0 < selectName.length) {
       selectName.pop()
@@ -51,7 +63,6 @@ function remove(selectName) {
 function nameSelect() {
   target.classList.add("cursor")
   if (num < worldList.length) {
-    console.log(num)
     const selectName = worldList[num].split("")
     writh(selectName)
     num = num + 1
